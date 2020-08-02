@@ -1,1 +1,3 @@
-# jeong3
+# hello-world
+
+Hi, I'm j.
