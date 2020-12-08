@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+<style>
+body{
+     margin: 0px;                    /* margin 여백: 0px */
+     min-width: 1050px;              /* 최소 너비: 1050px */
+     min-height: 550px;              /* 최소 높이: 550px */
+}
+
+#n_s{
+     display: block;                      /* 블록지정 */
+     width: 500px;
+     height: 150px;
+     margin: 180px auto 20px;        /* margin 여백: 상(180px) 우(auto) 하(20px) 좌(auto) */
+}
+
+#search{
+     display: block;
+     margin: 0 auto;
+     width: 550px;
+     height: 50px;
+     font-size: 15pt;
+     box-shadow: 3px 3px 5px #C3C3C3;/* 박스 테두리 그림자: (오른쪽 위치) (아래 위치) (블러) (색상) */
+     border: 1px solid #EAEAEA;           /* border: (선 굵기) (선 모양) (선 색) */
+}
+
+#box{
+     text-align: center;                       /* 중앙 정렬 */
+}
+
+#name_search{
+     width: 135px;
+     height: 40px;
+     margin: 30px 3px;
+     border: none;
+     background-color: #F4F4F4;
+     font-weight: bold;
+     color: grey;
+}
+
+
+#name_search:hover {
+     border: 1px solid #C6C6C6;
+     color: black;
+}
+
+</style>
+</head>
+<body>
+<br>
+<div>
+         <img id="n_s" src="11.png" title="search">
+</div>
+
+<div id="box">
+     <form>
+       <input id=search type="text" name="search" title="검색">
+       <input id="name_search" type="button"  value="op.gg" onclick="myFunction()">
+       <input id="name_search" type="button"  value="your.gg" onclick="myFunction2()">
+       <input id="name_search" type="button"  value="fow.kr" onclick="myFunction3()">
+     </form>
+</div>
+
+<script type="text/javascript">
+function myFunction() {
+    var x = document.getElementById("search").value;
+    window.location.href = "https://www.op.gg/summoner/userName="+x;
+}
+
+function myFunction2() {
+  var x = document.getElementById("search").value;
+  window.location.href = "https://your.gg/kr/"+x;
+}
+function myFunction3() {
+  var x = document.getElementById("search").value;
+  window.location.href = "http://fow.kr/find/"+x;
+}
+</script>
+</body>
+</html>
